@@ -9,7 +9,7 @@ ifndef GIT_BRANCH
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 endif
 
-TARGETS := elasticsearch logstash kibana beats
+TARGETS := elasticsearch logstash kibana
 
 images: $(TARGETS)
 push: $(TARGETS:%=%-push)
