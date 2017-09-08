@@ -24,7 +24,7 @@ services:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: lt_tmview
     volumes:
-     - ./db-dump:/docker-entrypoint-initdb.d
+     - ./scripts:/docker-entrypoint-initdb.d
     networks: ['stack']
 
   elasticsearch:
